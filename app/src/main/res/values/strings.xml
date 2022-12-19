@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">aquaCounter</string>
+    <string name="registro"> <i>¿No tienes cuenta?</i>  <b> Registrate </b></string>
+    <string name="inicioSesion">Iniciar Sesion</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Email</string>
+    <string name="ingresa_text"> <b> Ingresa con tu cuenta </b>  </string>
+    <string name="sesioninicio_text">Iniciar Sesion</string>
+    <string name="estasConectado"> <b> Estas conectado como: </b> </string>
+    <string name="nombreUsuario">Nombre de Usuario</string>
+</resources>
