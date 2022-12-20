@@ -10,45 +10,73 @@
     android:orientation="vertical"
     android:background="@drawable/fondo_1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/TextAppearance.Material3.BodyMedium"
-        android:text="@string/estasConectado"
-        android:textSize="20dp" />
 
-
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/TextAppearance.Material3.HeadlineLarge"
-        android:layout_marginBottom="20dp"
-        android:text="@string/nombreUsuario"/>
-
-    <Button
-        android:id="@+id/btnapp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Ingresar a Aplicación"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:textAppearance="?attr/textAppearanceButton"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        />
+        android:background="@drawable/fondo_form"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:text="@string/estasConectado"
+            android:textSize="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.HeadlineLarge"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:text="@string/nombreUsuario"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btnapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Ingresar a Aplicación"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textAppearance="?attr/textAppearanceButton"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            />
 
 
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cerrar Sesión"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:textAppearance="?attr/textAppearanceButton"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        />
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textAppearance="?attr/textAppearanceButton"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_marginBottom="110dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
 
 </LinearLayout>

@@ -27,52 +27,73 @@
         style="@style/TextAppearance.Material3.BodyMedium">
     </TextView>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilEmail"
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/tilPassword"
-        app:errorEnabled="true"
-        android:layout_marginBottom="10dp">
+        android:background="@drawable/fondo_form"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        >
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            />
+            android:layout_above="@id/tilPassword"
+            app:errorEnabled="true"
+            android:layout_marginBottom="10dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="20dp"
+                />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        app:passwordToggleEnabled="true"
-        app:errorEnabled="true"
-        android:layout_marginBottom="10dp">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
+            android:layout_centerInParent="true"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iniciar Sesión"
+            android:textAppearance="?attr/textAppearanceButton"
+            android:layout_below="@id/tilPassword"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_marginBottom="20dp"
             />
 
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="iniciar Sesión"
-        android:textAppearance="?attr/textAppearanceButton"
-        android:layout_below="@id/tilPassword"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        />
+
+    </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/tvRegister"

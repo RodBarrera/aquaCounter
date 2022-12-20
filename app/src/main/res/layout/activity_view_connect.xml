@@ -5,24 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_1"
-    tools:context=".ViewConnectActivity">
+    tools:context=".ViewConnectActivity"
+    android:layout_gravity="center_horizontal"
+    >
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="409dp"
+        android:layout_width="180dp"
         android:layout_height="593dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#00FFFFFF"
+        android:background="@color/transparent"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#00FFFFFF">
+            android:background="@color/transparent"
+            >
 
             <TextView
                 android:id="@+id/textView"
@@ -31,7 +34,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:text="Conexiones "
+                android:text="Conexiones"
                 style="@style/TextAppearance.Material3.HeadlineLarge" />
 
 
@@ -39,7 +42,7 @@
                 android:id="@+id/rvConexion"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#6AFFFFFF"
+                android:background="@color/transparent"
                 />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

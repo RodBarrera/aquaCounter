@@ -9,41 +9,65 @@
     android:background="@drawable/fondo_1"
     tools:context=".CrudActivity">
 
-    <!--Cerrar sesión-->
-    <Button
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:textAppearance="?attr/textAppearanceButton"
-        android:id="@+id/btnAdd"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Agregar Nueva Conexión"/>
+        android:background="@drawable/fondo_form"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:padding="10dp"
+        >
+
+        <!--Cerrar sesión-->
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:textAppearance="?attr/textAppearanceButton"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Agregar Nueva Conexión"
+
+            />
 
 
 
-    <!--Cerrar sesión-->
-    <Button
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:textAppearance="?attr/textAppearanceButton"
-        android:id="@+id/btnView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Ver Conexiones"/>
-    />
+        <!--Cerrar sesión-->
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:textAppearance="?attr/textAppearanceButton"
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ver Conexiones"
+            android:layout_marginHorizontal="55dp"
+            />
+        />
 
 
 
 
-    <!--Cerrar sesión-->
-    <Button
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:textAppearance="?attr/textAppearanceButton"
-        android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Salir"/>
-    />
+        <!--Cerrar sesión-->
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:textAppearance="?attr/textAppearanceButton"
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Salir"
+            android:layout_marginBottom="50dp"
+            android:layout_marginHorizontal="95dp"
+            />
+        />
+
+    </LinearLayout>
+
+
+
+
 
 </LinearLayout>
